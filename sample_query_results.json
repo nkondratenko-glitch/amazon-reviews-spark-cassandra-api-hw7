@@ -1,0 +1,78 @@
+{
+  "rows_loaded": 396000,
+  "rows_after_cleaning_verified": 46823,
+  "product_top": [
+    {
+      "product_id": "0439784549",
+      "product_title": "Harry Potter and the Half-Blood Prince (Book 6)",
+      "total_reviews": 256,
+      "avg_star_rating": 4.4492
+    },
+    {
+      "product_id": "0316011770",
+      "product_title": "The Historian",
+      "total_reviews": 83,
+      "avg_star_rating": 3.6265
+    },
+    {
+      "product_id": "006073132X",
+      "product_title": "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything",
+      "total_reviews": 79,
+      "avg_star_rating": 3.9747
+    },
+    {
+      "product_id": "1594480001",
+      "product_title": "The Kite Runner",
+      "total_reviews": 75,
+      "avg_star_rating": 4.64
+    },
+    {
+      "product_id": "0060875410",
+      "product_title": "The FairTax Book",
+      "total_reviews": 62,
+      "avg_star_rating": 4.9032
+    }
+  ],
+  "customer_top": [
+    {
+      "customer_id": "39134375",
+      "total_verified_reviews": 102
+    },
+    {
+      "customer_id": "51247650",
+      "total_verified_reviews": 97
+    },
+    {
+      "customer_id": "31844968",
+      "total_verified_reviews": 85
+    },
+    {
+      "customer_id": "35771631",
+      "total_verified_reviews": 85
+    },
+    {
+      "customer_id": "35004134",
+      "total_verified_reviews": 79
+    }
+  ],
+  "monthly_sample": [
+    {
+      "product_id": "0439784549",
+      "review_month": "2005-07",
+      "monthly_reviews": 141,
+      "monthly_avg_star_rating": 4.4043
+    },
+    {
+      "product_id": "0439784549",
+      "review_month": "2005-08",
+      "monthly_reviews": 80,
+      "monthly_avg_star_rating": 4.4125
+    },
+    {
+      "product_id": "0439784549",
+      "review_month": "2005-09",
+      "monthly_reviews": 35,
+      "monthly_avg_star_rating": 4.7143
+    }
+  ]
+}
