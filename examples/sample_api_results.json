@@ -1,0 +1,246 @@
+{
+  "product_id_used": "0439784549",
+  "customer_id_used": 50122160,
+  "star_rating_used": 5,
+  "queries": {
+    "GET /products/0439784549/reviews?limit=5": [
+      {
+        "product_id": "0439784549",
+        "review_date": "2005-10-13T00:00:00",
+        "review_id": "R15PQRSBFEHY9R",
+        "customer_id": 13844852,
+        "star_rating": 5,
+        "verified_purchase": 0,
+        "review_headline": "Rowling does it better"
+      },
+      {
+        "product_id": "0439784549",
+        "review_date": "2005-10-13T00:00:00",
+        "review_id": "R11T2U8F30UFRR",
+        "customer_id": 46504272,
+        "star_rating": 4,
+        "verified_purchase": 0,
+        "review_headline": "Another tale from a fantastic world"
+      },
+      {
+        "product_id": "0439784549",
+        "review_date": "2005-10-12T00:00:00",
+        "review_id": "R2DN4HQH3LTQ09",
+        "customer_id": 44921369,
+        "star_rating": 5,
+        "verified_purchase": 0,
+        "review_headline": "And Now The Gloves Come Off"
+      },
+      {
+        "product_id": "0439784549",
+        "review_date": "2005-10-12T00:00:00",
+        "review_id": "R1D46A4O1LVG4M",
+        "customer_id": 12093248,
+        "star_rating": 5,
+        "verified_purchase": 0,
+        "review_headline": "Rowling's best yet!!!"
+      },
+      {
+        "product_id": "0439784549",
+        "review_date": "2005-10-12T00:00:00",
+        "review_id": "R2I2CUJL6V415N",
+        "customer_id": 48922775,
+        "star_rating": 5,
+        "verified_purchase": 0,
+        "review_headline": "Magical Book"
+      }
+    ],
+    "GET /products/0439784549/reviews/5?limit=5": [
+      {
+        "product_id": "0439784549",
+        "star_rating": 5,
+        "review_date": "2005-10-13T00:00:00",
+        "review_id": "R15PQRSBFEHY9R",
+        "customer_id": 13844852,
+        "verified_purchase": 0,
+        "review_headline": "Rowling does it better"
+      },
+      {
+        "product_id": "0439784549",
+        "star_rating": 5,
+        "review_date": "2005-10-12T00:00:00",
+        "review_id": "R2I2CUJL6V415N",
+        "customer_id": 48922775,
+        "verified_purchase": 0,
+        "review_headline": "Magical Book"
+      },
+      {
+        "product_id": "0439784549",
+        "star_rating": 5,
+        "review_date": "2005-10-12T00:00:00",
+        "review_id": "R12LMSW4BHEO2S",
+        "customer_id": 25758189,
+        "verified_purchase": 0,
+        "review_headline": "Good stuff"
+      },
+      {
+        "product_id": "0439784549",
+        "star_rating": 5,
+        "review_date": "2005-10-12T00:00:00",
+        "review_id": "R2DN4HQH3LTQ09",
+        "customer_id": 44921369,
+        "verified_purchase": 0,
+        "review_headline": "And Now The Gloves Come Off"
+      },
+      {
+        "product_id": "0439784549",
+        "star_rating": 5,
+        "review_date": "2005-10-12T00:00:00",
+        "review_id": "R1D46A4O1LVG4M",
+        "customer_id": 12093248,
+        "verified_purchase": 0,
+        "review_headline": "Rowling's best yet!!!"
+      }
+    ],
+    "GET /customers/50122160/reviews?limit=5": [
+      {
+        "customer_id": 50122160,
+        "review_date": "2005-10-14T00:00:00",
+        "review_id": "R2D4XQKH128F3O",
+        "product_id": "0787978922",
+        "star_rating": 5,
+        "verified_purchase": 0,
+        "review_headline": "Recommended reading for students of Judaic mysticism and the Kabbalah in general, and the Tanya in particular"
+      },
+      {
+        "customer_id": 50122160,
+        "review_date": "2005-10-14T00:00:00",
+        "review_id": "R1S06GK0YSO3YQ",
+        "product_id": "0801880882",
+        "star_rating": 5,
+        "verified_purchase": 0,
+        "review_headline": "An informed explanation of the structure and logic of the early Christian interpretations of scripture in late antiquity"
+      },
+      {
+        "customer_id": 50122160,
+        "review_date": "2005-10-14T00:00:00",
+        "review_id": "R19R91IO2L1F35",
+        "product_id": "0825455189",
+        "star_rating": 5,
+        "verified_purchase": 0,
+        "review_headline": "Great good humor with an enduring message for young readers ages 4 to 6"
+      },
+      {
+        "customer_id": 50122160,
+        "review_date": "2005-10-14T00:00:00",
+        "review_id": "R2SO7GWIH233FS",
+        "product_id": "0787978922",
+        "star_rating": 5,
+        "verified_purchase": 0,
+        "review_headline": "Recommended reading for students of Judaic mysticism and the Kabbalah in general, and the Tanya in particular"
+      },
+      {
+        "customer_id": 50122160,
+        "review_date": "2005-10-14T00:00:00",
+        "review_id": "RSH7413ZXE7BM",
+        "product_id": "0966361083",
+        "star_rating": 5,
+        "verified_purchase": 0,
+        "review_headline": "A 'must' for any breast cancer sufferer - especially the newly diagnosed"
+      }
+    ],
+    "GET /analytics/top-products?start_date=2005-01-01&end_date=2005-12-31&n=5": [
+      {
+        "product_id": "0439784549",
+        "review_count": 2052,
+        "avg_star_rating": 4.2398,
+        "product_title": "Harry Potter and the Half-Blood Prince (Book 6)"
+      },
+      {
+        "product_id": "0975599518",
+        "review_count": 909,
+        "avg_star_rating": 2.8845,
+        "product_title": "Natural Cures \"They\" Don't Want You to Know about"
+      },
+      {
+        "product_id": "0060875410",
+        "review_count": 765,
+        "avg_star_rating": 3.1634,
+        "product_title": "The FairTax Book"
+      },
+      {
+        "product_id": "0060761288",
+        "review_count": 633,
+        "avg_star_rating": 3.0885,
+        "product_title": "100 People Who Are Screwing Up America (And Al Franken Is #37)"
+      },
+      {
+        "product_id": "0316011770",
+        "review_count": 578,
+        "avg_star_rating": 3.2388,
+        "product_title": "The Historian"
+      }
+    ],
+    "GET /analytics/top-verified-customers?start_date=2005-01-01&end_date=2005-12-31&n=5": [
+      {
+        "customer_id": 35771631,
+        "review_count": 54
+      },
+      {
+        "customer_id": 14453482,
+        "review_count": 46
+      },
+      {
+        "customer_id": 51247650,
+        "review_count": 43
+      },
+      {
+        "customer_id": 52845727,
+        "review_count": 37
+      },
+      {
+        "customer_id": 52996207,
+        "review_count": 36
+      }
+    ],
+    "GET /analytics/top-haters?start_date=2005-01-01&end_date=2005-12-31&n=5": [
+      {
+        "customer_id": 12598621,
+        "review_count": 50
+      },
+      {
+        "customer_id": 12770238,
+        "review_count": 31
+      },
+      {
+        "customer_id": 12897498,
+        "review_count": 30
+      },
+      {
+        "customer_id": 12998445,
+        "review_count": 27
+      },
+      {
+        "customer_id": 53071109,
+        "review_count": 26
+      }
+    ],
+    "GET /analytics/top-backers?start_date=2005-01-01&end_date=2005-12-31&n=5": [
+      {
+        "customer_id": 50122160,
+        "review_count": 1404
+      },
+      {
+        "customer_id": 50732546,
+        "review_count": 729
+      },
+      {
+        "customer_id": 50776149,
+        "review_count": 525
+      },
+      {
+        "customer_id": 12598621,
+        "review_count": 305
+      },
+      {
+        "customer_id": 39569598,
+        "review_count": 299
+      }
+    ]
+  }
+}

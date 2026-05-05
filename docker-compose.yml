@@ -1,0 +1,74 @@
+version: "3.8"
+
+services:
+  cassandra:
+    image: cassandra:4.1
+    container_name: hw7-cassandra
+    ports:
+      - "9042:9042"
+    environment:
+      CASSANDRA_CLUSTER_NAME: amazon_reviews_cluster
+      CASSANDRA_DC: datacenter1
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      CASSANDRA_NUM_TOKENS: 16
+      MAX_HEAP_SIZE: 1G
+      HEAP_NEWSIZE: 256M
+    volumes:
+      - cassandra_data:/var/lib/cassandra
+      - ./cassandra/schema.cql:/schema.cql
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'DESCRIBE KEYSPACES' localhost 9042"]
+      interval: 20s
+      timeout: 10s
+      retries: 15
+
+  redis:
+    image: redis:7-alpine
+    container_name: hw7-redis
+    ports:
+      - "6379:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    container_name: hw7-api
+    ports:
+      - "8000:8000"
+    environment:
+      CASSANDRA_HOST: cassandra
+      CASSANDRA_PORT: 9042
+      CASSANDRA_KEYSPACE: amazon_reviews_hw7
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      CACHE_TTL_SECONDS: 300
+    depends_on:
+      cassandra:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  spark:
+    image: bitnami/spark:3.5
+    container_name: hw7-spark
+    user: root
+    working_dir: /app
+    volumes:
+      - ./:/app
+    environment:
+      SPARK_MODE: client
+      CASSANDRA_HOST: cassandra
+      CASSANDRA_PORT: 9042
+      CASSANDRA_KEYSPACE: amazon_reviews_hw7
+      INPUT_PATH: /app/data/amazon_reviews.csv
+    depends_on:
+      cassandra:
+        condition: service_healthy
+    command: ["bash", "-lc", "tail -f /dev/null"]
+
+volumes:
+  cassandra_data:
+  redis_data:
